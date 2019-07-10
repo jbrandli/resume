@@ -1,0 +1,134 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Medium Length Professional CV
+% LaTeX Template
+% Version 2.0 (8/5/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Rishi Shah 
+%
+% Important note:
+% This template requires the resume.cls file to be in the same directory as the
+% .tex file. The resume.cls file provides the resume style used for structuring the
+% document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass{resume} % Use the custom resume.cls style
+
+\usepackage[left=0.75in,top=0.6in,right=0.75in,bottom=0.6in]{geometry} % Document margins
+\newcommand{\tab}[1]{\hspace{.2667\textwidth}\rlap{#1}}
+\newcommand{\itab}[1]{\hspace{0em}\rlap{#1}}
+\name{John Gottlieb Brandli} % Your name
+\address{5441 S Buckskin Pass Drive \\ Colorado Springs, Colorado 80917} % Your address
+%\address{123 Pleasant Lane \\ City, State 12345} % Your secondary addess (optional)
+\address{719-321-5923 \\ john.brandli@yahoo.com} % Your phone number and email
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Education}
+
+{\bf University of Florida} \hfill {\em August 2010 - December 2014} 
+\\ Bachelor Of Science, Computer Science
+\\ Department of Engineering\\
+
+\end{rSection}
+
+\begin{rSection}{Carrier Objective}
+ To find a job that provides opportunity to grow my skills in the Satellite and Space industry. 
+\end{rSection}
+%
+%\begin{rSection}{Career Objective}
+% To find a company that allows me to grow my skills and advance. 
+%\end{rSection}
+%--------------------------------------------------------------------------------
+%    Projects And Seminars
+%-----------------------------------------------------------------------------------------------
+
+%----------------------------------------------------------------------------------------
+%	TECHNICAL STRENGTHS SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Technical Strengths}
+
+\begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
+Programming Languages \ & Java, JavaScript, Python, C\# \\
+ Tools &  Docker, Bamboo, Jira, Bitbucket, ActiveMQ, Git, Swagger, Gradle \\
+Frameworks &  Spring, Node, Angular, React, Jest, Junit \\
+
+\end{tabular}
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Work Experience}
+\begin{rSubsection}{Harris Corporation}{February 2018 - Present}{Software Engineer 3}{Colorado Springs, CO}
+\item Setup DevOps tool servers for Bigtop including Artifactory, Bamboo, Jira, Bitbucket and Eggplant. Called Jfrog, Atlassian, etc to procure trial licenses for bigtop. Scrounged old servers from harris IT to run the tools. Configured the tools to continuously build, test, and deploy the Bigtop Software Application on the Factory Test Bed system. This prototype lab infrastructure was was accepted by Harris and the Colorado Springs Segment purchased official licenses and servers to implement it. 
+\item Redesigned Bigtop Software Architecture for Docker and created docker images customized for our application. Configured our application to work with Docker Swarm to allow for automated deployment and updates of the bigtop stack to all Bigtop systems with one command and get bigtop ready for the cloud.  
+\item Created and implemented incremental upgrade plan to breakdown the monolithic Bigtop war file into individual Spring Boot Microservices which are easier to test and maintain. 
+\item Incorporated Swagger into our application to autogenerate our ICD documentation and save Engineering time producing documentation
+\item Produced concrete Labor and Time estimates for proposed Harris R\&D efforts as well as Government Programs for Harris leadership. 
+\item Worked with the Cyber Security, Harris IT, and the networking team create firewall rules for our Lab test system to allow automated deployments while still maintaining security compliance with our ATO. 
+\item Trained System Admins on managing docker containers and docker swarm deployments. 
+\item Trained Test Engineers how to use Eggplant and Cypress to create and run automated regression tests. 
+\item Became an expert with the RT logic SAT ID system. Troubleshot problems with multiple versions of the SATID Geolocation system to get it working with Bigtop to selloff the Geolocation Emulation Capability. 
+
+\newpage
+\end{rSubsection}
+\begin{rSubsection}{Harris Corporation}{June 2016 - February 2018}{Software Engineer 2}{Colorado Springs, CO}
+\item Responsible for developing web applications using Angular components and UI-Router for the Bigtop Satcom Trainer. 
+\item Integrated the SGP4 satellite propagation model into the Big Top software application for simulation of satellite orbits and doppler shifts on Geolocated Signals. Became the subject matter expert for Satellite Geolocation at Harris. 
+\item Created geospatial representations of satellites and signal footprints using Cesium Entities complete with informational popups. Connected to ActiveMQ queues using websockets to stream data and update the map and items in real time. Accessed a REST API to allow the user to perform actions on the equipment.
+\item Quickly learned Cesium (a Google Earth like Web library) and became the subject matter expert for our division responsible for the cesium components of three different programs. 
+\item Created Hardware translators in jython running on a Codemettle 3.0 ESB to command RF equipment such as modulators and a software defined radio. 
+\item Created REST (Spring Framework) API endpoints running in a Tomcat Java 8 webserver to fetch store and perform business logic on geospatial data.
+\item Developed GUIs both as part of a large team developing individual components and as an individual developer in a self directed environment. 
+\item Tracked tasks, stories, and bugs using JIRA in an Agile team and used Bitbucket Pull requests to review all work done. 
+\item Developed Unit tests covering meaningful scenarios and asserting something useful in jUnit and Karma to test both front and back end. 
+\item Developed one click build and deploy scripts in Gradle that were capable of installing dependencies from both Maven and NPM, compiling both the Webapp and the backend code into a single .War file and deploying it to a VM. 
+\end{rSubsection}
+\begin{rSubsection}{Harris Corporation}{December 2014 - May 2016}{Software Engineer 1}{Palm Bay, Fl}
+\item  Part of the software factory working on a plugin framework consisting of a variety of Windows Services including a MySQL database, Service Bus, and graphical analysis of metrics. 
+\item Gave software demos to interview candidates and customers.
+\item Found a critical bug in the service bus architecture causing reliability issues was able to work with management to get the support and schedule to fix it in time for a critical deadline.
+\item Created build, label, and installation batch scripts using Clearcase version con- trol and trained Software CM to use them. 
+\item  POC for all builds of the Core framework and created and debugged Continuous Integration jobs on Jenkins. Wrote Test Procedures and programs for regression testing newly developed functionality to prove we met Requirements. 
+\item Used Redgate ANTS performance profiler to identify bottlenecks in iCON framework’s metrics processing. Redesigned our publishing process to improve performance from exponential to constant time. 
+\end{rSubsection}
+
+\begin{rSubsection}{The Home Depot}{May 2014 - August 2014}{Software Intern 2}{Atlanta, Ga}
+\item Led a team of two junior interns creating a Java Batch program to stress test Web Services. Replaced licensed software and saved software labor time in testing. 
+\item Wrote and maintained Restful Web Services for Supply Chain : Warehouse Management using the JAX-RS API to implement business logic on database info. 
+\item Used a Jenkins build server to automatically deploy new code to our JVM Server from Subversion. 
+\end{rSubsection}
+\begin{rSubsection}{The Home Depot}{May 2013 - August 2013}{Software Intern 1}{Atlanta, Ga}
+\item Created a cross-platform (Chrome, IE8+, Safari) dashboard web application which used the bing map api and jqPlot to display both regional and local information. 
+\item Learned jQuery and jqPlot to create graphics and plots that accessed a Ware- house management database via a REST api and then animated a map of the Distribution Center based on the data. 
+\end{rSubsection}
+\end{rSection}
+
+
+%	EXAMPLE SECTION
+%----------------------------------------------------------------------------------------
+
+
+
+
+%----------------------------------------------------------------------------------------
+% Extra Curricular
+%-------------------------------------------------------------------------------
+\end{document}
+
